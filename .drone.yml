@@ -9,9 +9,9 @@ steps:
   - npm run test:unit  
   when:
     branch:
-    - develop
+    - main
     event:
-      - pull_request
+      - push
 
 - name: docker  
   image: plugins/docker
